@@ -1,0 +1,208 @@
+@charset "UTF-8";
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --title--dark-color: #212121;
+  --title--light-color: #ffffff;
+  --btn--dark-color: #212121;
+  --btn--accent-color: #2196f3;
+  --btn--light-color: #ffffff;
+  --text--dark-color: #757575;
+  --text--light-color: #ffffff;
+  --accent--color: #2196f3;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--text--dark-color);
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Шапка и Логотип компании */
+.logotip {
+  font-family: var(--secondary-fonty);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.logotip--text {
+  color: var(--accent--color);
+}
+
+/* Панель навигации */
+.nav,
+.nav--contact {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title--dark-color);
+}
+
+.nav:hover,
+.nav:focus,
+.nav--contact:hover,
+.nav--contact:focus {
+  color: var(--accent--color);
+}
+
+/* Hero */
+.title--h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--title--light-color);
+  background-color: grey;
+}
+
+.button {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.53;
+  letter-spacing: 0.06em;
+  color: var(--btn--light-color);
+  background: var(--btn--accent-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+
+/* Приимущества */
+.about--img,
+.work--img
+.about--img,
+.work--img {
+  background-color: #F5F4FA;
+}
+
+.about--title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.36;
+}
+
+.about--text,
+.address,
+.footer--text {
+  line-height: 1.71;
+}
+
+/* Разработки */
+.work--title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--title--light-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Команда разработчиков */
+.command--title .command--text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.command--text {
+  font-weight: 400;
+}
+
+/* Портфолио - шапка*/
+.button--list {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62px;
+  letter-spacing: 0.03em;
+  color: var(--btn--dark-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.button--list:hover,
+.button--list:focus {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--btn--light-color);
+  background-color: var(--btn--accent-color);
+}
+
+/* Портфолио -Каталог Работ */
+.work--catalog-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title--dark-color);
+}
+
+.work--catalog-text {
+  font-size: 16px;
+  line-height: 1.88px;
+  color: var(--text--dark-color);
+}
+
+.work--catalog-textstyle:hover,
+.work--catalog-textstyle:focus {
+  color: var(--text--light-color);
+  background-color: var(--accent--color);
+}
+
+.work--catalog-link:hover {
+  color: var(--text--light-color);
+  background-color: var(--accent--color);
+}
+
+/* Координаты и обратная связь */
+.address {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: gray;
+}
+
+.address--city {
+  color: var(--text--light-color);
+}
+
+.footer--text {
+  color: var(--title--light-color);
+  background-color: greenyellow;
+}
+
+.footer--buttom {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--title--light-color);
+}
+
+.footer--buttom:hover {
+  background-color: var(--btn--accent-color);
+}
+
+/* Логотип кампании */
+.footer--email {
+  font-size: 16px;
+  line-height: 1.25px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
