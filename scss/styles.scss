@@ -11,6 +11,17 @@
   --text--light-color: #ffffff;
   --accent--color: #2196f3;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -25,7 +36,22 @@ a {
   text-decoration: none;
 }
 /* Шапка и Логотип компании */
+.container--nav{
+  width: 1600px;
+  height: 80px;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+}
 .logotip {
+  display: flex;
+  margin-left: 215px;
+  margin-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: var(--secondary-fonty);
   font-weight: 700;
   font-size: 26px;
@@ -33,41 +59,71 @@ a {
 
   color: #000000;
 }
-.logotip--text {
+.logotip--text{
   color: var(--accent--color);
 }
+
 /* Панель навигации */
-.nav,
-.nav--contact{
+.nav--list{
+  display: flex;
+}
+
+.nav--list .nav--item + .nav--item{
+  margin-left: 50px;
+}
+.nav--list1{
+  display: flex;
+  margin-left: 305px;
+ /*  background-color: yellow; */
+}
+.nav--list1 .nav--item1 + .nav--item1{
+  margin-left: 30px;
+}
+.nav--link,
+.nav--link1{
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title--dark-color);
 }
-.nav:hover,
-.nav:focus,
-.nav--contact:hover,
-.nav--contact:focus {
+.nav--link:hover,
+.nav--link:focus,
+.nav--link1:hover,
+.nav--link1:focus {
   color: var(--accent--color);
 }
+
 /* Hero */
+.container--hero{
+  width: 1600px;
+  height: 600px;
+  text-align: center;
+  background-color: grey;
+}
 .title--h1 {
+  margin: 0;
+  padding: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
 
   color: var(--title--light-color);
-  background-color: grey;
 }
+
 .button{
   font-family:var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 0.53;
   letter-spacing: 0.06em;
+
 
   color: var(--btn--light-color);
   background: var(--btn--accent-color);
@@ -78,6 +134,77 @@ a {
   width: 200px;
   height: 50px;
 }
+
+
+.about--img
+
+.about--title
+
+.about--text
+
+.title--h2
+
+.work--img
+
+.work--title
+
+.command--img-name
+
+.command--title
+
+.command--text
+
+/* Координаты и обратная связь */
+.address {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: gray;
+}
+.address--city {
+  color: var(--text--light-color);
+}
+
+.footer--buttom {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  color: var(--title--light-color)
+}
+
+.footer--buttom:hover{
+  background-color: var(--btn--accent-color);
+}
+
+.footer--text {
+  color: var(--title--light-color);
+  background-color: greenyellow;
+}
+
+.footer--email{
+  font-size: 16px;
+  line-height: 1.25px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer--buttom {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  color: var(--title--light-color)
+}
+.footer--buttom:hover{
+  background-color: var(--btn--accent-color);
+}
+
+
+
+
 
 /* Приимущества */
 .about--img,
@@ -165,35 +292,4 @@ a {
 .work--catalog-link:hover{
   color: var(--text--light-color);
   background-color: var(--accent--color);
-}
-/* Координаты и обратная связь */
-.address {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: gray;
-}
-.address--city {
-  color: var(--text--light-color);
-}
-.footer--text {
-  color: var(--title--light-color);
-  background-color: greenyellow;
-}
-.footer--buttom {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-
-  letter-spacing: 0.06em;
-
-  color: var(--title--light-color)
-}
-.footer--buttom:hover{
-  background-color: var(--btn--accent-color);
-}
-/* Логотип кампании */
-.footer--email {
-  font-size: 16px;
-  line-height: 1.25px;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
 }

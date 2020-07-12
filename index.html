@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +14,39 @@
 <body>
 	<!--Шапка -->
 	<header>
-		<nav>
+		<div  class="container--nav">
+			<nav class="nav">
 			<!-- Логотип кампании -->
 			<a class="logotip" lang="en" href="./index.html"><span class="logotip--text" >Web</span> Studio</a>
-			<ul>
-				<li>
-					<a class="nav" href="./index.html">Студия</a>
+			<ul class="nav--list">
+				<li class="nav--item">
+					<a class="nav--link" href="./index.html">Студия</a>
 				</li>
-				<li>
-					<a class="nav" href="./portfolio.html">Портфолио</a>
+				<li class="nav--item">
+					<a class="nav--link " href="./portfolio.html">Портфолио</a>
 				</li>
-				<li>
-					<a class="nav" href=./index.html>Контакты</a>
+				<li class="nav--item">
+					<a class="nav--link" href=./index.html>Контакты</a>
 				</li>
 			</ul>
-			<div>
-				<ul>
-					<li><a class="nav--contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-					<li><a class="nav--contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+			<!-- <div class="container--contact"> -->
+				<ul class="nav--list1">
+					<li  class="nav--item1">
+						<a class="nav--link1" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					<li  class="nav--item1">
+						<a class="nav--link1" href="tel:+380961111111">+38 096 111 11 11</a>
+					</li>
 				</ul>
-			</div>
-		</nav>
+			<!-- </div> -->
+			</nav>
+		</div>
+
 		 <!-- Hero -->
-		<h1 class="title--h1" >Эффективные решения для вашего бизнеса</h1>
-		<button class="button" type="button">Заказать услугу</button>
+		 <div class="container--hero">
+			<h1 class="title--h1" >Эффективные решения <br>  для вашего бизнеса</h1>
+			<button class="button" type="button">Заказать услугу</button>
+		 </div>
 	</header>
 	<main>
 		<!-- Приимущества -->
