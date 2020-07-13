@@ -44,7 +44,8 @@ a {
 /* Шапка и Логотип компании */
 .container--nav {
   width: 1600px;
-  height: 80px;
+  height: 81px;
+  background-color: cadetblue;
 }
 
 .nav {
@@ -151,63 +152,7 @@ a {
   height: 50px;
 }
 
-.about--img
-.about--title
-.about--text
 .title--h2
-.work--img
-.work--title
-.command--img-name
-.command--title
-.command--text
-.address {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: gray;
-}
-
-.address--city {
-  color: var(--text--light-color);
-}
-
-.footer--buttom {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--title--light-color);
-}
-
-.footer--buttom:hover {
-  background-color: var(--btn--accent-color);
-}
-
-.footer--text {
-  color: var(--title--light-color);
-  background-color: greenyellow;
-}
-
-.footer--email {
-  font-size: 16px;
-  line-height: 1.25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer--buttom {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--title--light-color);
-}
-
-.footer--buttom:hover {
-  background-color: var(--btn--accent-color);
-}
-
-/* Приимущества */
 .about--img,
 .work--img
 .about--img,
@@ -242,6 +187,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  padding-left: 495px;
   text-align: center;
 }
 
@@ -250,6 +196,29 @@ a {
 }
 
 /* Портфолио - шапка*/
+.container--portfolio {
+  width: 611px;
+  height: 54px;
+  margin-top: 93px;
+  margin-left: 495px;
+  background-color: aqua;
+}
+
+.btn--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn--item {
+  /*  display: block; */
+  margin-right: 8px;
+}
+
+.btn--item:not(5) {
+  margin-right: 0;
+}
+
 .button--list {
   font-family: var(--main-font);
   font-weight: 500;
@@ -295,4 +264,52 @@ a {
 .work--catalog-link:hover {
   color: var(--text--light-color);
   background-color: var(--accent--color);
+}
+
+/* Координаты и обратная связь */
+.address {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: gray;
+}
+
+.address--city {
+  color: var(--text--light-color);
+}
+
+.footer--buttom {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--title--light-color);
+}
+
+.footer--buttom:hover {
+  background-color: var(--btn--accent-color);
+}
+
+.footer--text {
+  color: var(--title--light-color);
+  background-color: greenyellow;
+}
+
+.footer--email {
+  font-size: 16px;
+  line-height: 1.25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer--buttom {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--title--light-color);
+}
+
+.footer--buttom:hover {
+  background-color: var(--btn--accent-color);
 }
