@@ -51,32 +51,38 @@
 	<main>
 		<!-- Приимущества -->
 		<section>
-			<h2 hidden> О компании </h2>
-			<ul>
-				<li>
-					<img class="about--img" src="./img/advantage/satelite.svg" alt=" Спутниковая антена">
-					<h3 class="about--title">Внимание к деталям</h3>
-					<p class="about--text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-				</li>
-				<li>
-					<img class="about--img" src="./img/advantage/clok.svg" alt="Часы">
-					<h3 class="about--title" >Пунктуальность</h3>
-					<p class="about--text"> Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-				</li>
-				<li>
-					<img class="about--img" src="./img/advantage/plan.svg" alt="Планирование">
-					<h3 class="about--title" >Планирование</h3>
-					<p class="about--text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-				</li>
-				<li>
-					<img class="about--img" src="./img/advantage/cosmonaut.svg" alt="Современные технологии">
-					<h3 class="about--title" >Современные технологии</h3>
-					<p class="about--text">Значимость этих проблем настолько очевидна, что реализация плановых заданий..</p>
-				</li>
-			</ul>
+			<div class="container--about">
+				<h2 hidden> О компании </h2>
+				<ul class="about--list">
+					<li class="about--item">
+						<img class="about--img" src="./img/advantage/satelite.svg" alt=" Спутниковая антена" width="70" height="70">
+						<h3 class="about--title">Внимание к деталям</h3>
+						<p class="about--text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+					</li>
+					<li class="about--item">
+						<img class="about--img" src="./img/advantage/clok.svg" alt="Часы" width="70" height="70">
+						<h3 class="about--title" >Пунктуальность</h3>
+						<p class="about--text"> Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+					</li>
+					<li class="about--item">
+						<img class="about--img" src="./img/advantage/plan.svg" alt="Планирование" width="70" height="70">
+						<h3 class="about--title" >Планирование</h3>
+						<p class="about--text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+					</li>
+					<li class="about--item">
+						<img class="about--img" src="./img/advantage/cosmonaut.svg" alt="Современные технологии" width="70" height="70">
+						<h3 class="about--title" >Современные технологии</h3>
+						<p class="about--text">Значимость этих проблем настолько очевидна, что реализация плановых заданий..</p>
+					</li>
+				</ul>
+			</div>
+
 		</section>
-		<!-- Разработки -->
+		<!-- Development -->
 		<section>
+			<div class="container--development">
+
+			</div>
 			<h2 class="title--h2">Чем мы занимаемся</h2>
 			<ul>
 				<li>
@@ -164,27 +170,28 @@
 		</section>
 	</main>
 	<!-- Координаты и обратная связь -->
-	<footer>
+	<footer class="container--foter">
 		<!-- Логотип кампании -->
-		<div>
+		<div class="footer--social">
 			<a class="logotip" lang="en" href="./index.html"><span class="logotip--text">Web</span> Studio</a>
 			<address class="address"> <span class="address--city">г. Киев, пр-т Леси Украинки, 26</span><br>
-				info@example.com <br>
-				+38 099 111 11 11
+				 info@example.com <br>
+				 +38 099 111 11 11
 			</address>
-		</div>
-		<div>
+	 </div>
+		<div class="footer--social1">
 			<b class="footer--text">Присоединяйтесь</b>
-			<ul>
-			<li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-			<li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-			<li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-			<li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+			<ul class="footer--list">
+				<li class="footer--link"<a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
+				<li class="footer--link"<a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
+				<li class="footer--link"<a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
+				<li class="footer--link"<a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="footer--social2">
 			<b class="footer--text">Подпишитесь на рассылку</b>
-			<input class="footer--email" type="email"   placeholder= "E-mail" name="email"/>
+
+			<input class="footer--email" type="email"  placeholder="E-mail" name="email" />
 			<button class="footer--buttom" type="submit"> Подписаться</button>
 		</div>
 	</footer>

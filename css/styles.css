@@ -45,7 +45,6 @@ a {
 .container--nav {
   width: 1600px;
   height: 81px;
-  background-color: cadetblue;
 }
 
 .nav {
@@ -92,7 +91,6 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-left: 305px;
-  /*  background-color: yellow; */
 }
 
 .nav--list1 .nav--item1 + .nav--item1 {
@@ -115,14 +113,6 @@ a {
 .nav--link1:hover,
 .nav--link1:focus {
   color: var(--accent--color);
-}
-
-/* Hero */
-.container--hero {
-  width: 1600px;
-  height: 600px;
-  text-align: center;
-  background-color: grey;
 }
 
 .title--h1 {
@@ -152,9 +142,37 @@ a {
   height: 50px;
 }
 
-.title--h2
-.about--img,
-.work--img
+/* Hero */
+.container--hero {
+  width: 1600px;
+  height: 600px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/*Приимущества */
+.container--about {
+  width: 1090px;
+  height: 251px;
+  margin-top: 94px;
+  margin-left: 215px;
+}
+
+.container--about .about--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*   justify-content: center; */
+}
+
+.about--item {
+  margin-right: 30px;
+}
+
+.about--item:last-child {
+  margin-right: 0;
+}
+
 .about--img,
 .work--img {
   background-color: #F5F4FA;
@@ -164,15 +182,25 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.36;
+  margin-top: 30px;
 }
 
 .about--text,
 .address,
 .footer--text {
   line-height: 1.71;
+  margin-top: 10px;
 }
 
 /* Разработки */
+.title--h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  color: var(--title--dark-color);
+}
+
 .work--title {
   font-weight: 700;
   font-size: 14px;
@@ -331,8 +359,6 @@ a {
   height: 50px;
   font-size: 16px;
   line-height: 1.25px;
-  /* align-items: center; */
-  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
