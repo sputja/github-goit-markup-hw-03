@@ -193,7 +193,7 @@ a {
 }
 
 .btn--item{
- /*  display: block; */
+  display: block;
   margin-right: 8px;
 
 }
@@ -252,49 +252,97 @@ a {
 
 
 /* Координаты и обратная связь */
+
+.container--foter{
+  width: 1600px;
+  height: 252px;
+  background: #2F303A;
+  display: flex;
+  margin-top: 94px;
+}
+
+.footer--social{
+  padding-top: 60px;
+  margin-left: 214px;
+}
+
+.footer--social .logotip{
+  margin: 0;
+  padding: 0;
+  color: var(--text--light-color)
+}
+
+.footer--social .address{
+  display: block;
+  padding-top: 20px;
+}
 .address {
   color: rgba(255, 255, 255, 0.6);
-  background-color: gray;
 }
 .address--city {
   color: var(--text--light-color);
 }
 
-.footer--buttom {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-
-  letter-spacing: 0.06em;
-
-  color: var(--title--light-color)
+.footer--social1{
+  padding-top: 72px;
+  width: 206px;
+  height: 80px;
+  margin-left: 69px;
 }
 
-.footer--buttom:hover{
-  background-color: var(--btn--accent-color);
+.footer--social2{
+  margin: 0;
+  padding: 0;
+  padding-top: 72px;
+  width: 570px;
+  height: 86px;
+  margin-left: 94px;
+/*   background-color: red */
 }
 
 .footer--text {
+  display: block;
   color: var(--title--light-color);
-  background-color: greenyellow;
 }
 
 .footer--email{
+  /* display: block */
+  margin-top: 20px;
+/*   margin-right: 12px; */
+  width: 358px;
+  height: 50px;
+
   font-size: 16px;
   line-height: 1.25px;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+  /* align-items: center; */
+
+  box-shadow: red;
+  color:  rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .footer--buttom {
-  font-weight: bold;
+  width: 196px;
+  height: 50px;
+  margin-left: 12px;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
-
+  line-height: 1,87;
+  /* align-items: center; */
+  text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--title--light-color)
+  color: var(--btn--light-color);
+  background: #2196F3; /* #2F303A; */
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
-.footer--buttom:hover{
+/* .footer--buttom:hover,
+.footer--buttom:focus{
   background-color: var(--btn--accent-color);
-}
+} */
