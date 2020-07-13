@@ -153,9 +153,17 @@ a {
   margin-left: 215px;
 }
 
+.title--h2{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+
+color: var(--title--dark-color);
+}
 .container--about .about--list{
   display: flex;
-/*   justify-content: center; */
+
 }
 
 .about--item{
@@ -187,16 +195,32 @@ a {
 
 /* Разработки */
 
-.title--h2{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
-
-color: var(--title--dark-color);
+.container--development{
+  width: 1170px;
+  height: 386px;
+  margin-top: 94px;
+  margin-left: 215px;
+  background-color: blueviolet;
 }
 
+.work--list{
+    display: flex;
+}
+
+.work--item{
+  padding-top: 50px;
+  margin-right: 30px;
+}
+
+.work--item:not(3){
+  margin-right: 0;
+}
+
+
+
 .work--title{
+ /*  */ width: 370px;
+ /*  height: 70px; */
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
