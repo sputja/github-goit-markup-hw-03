@@ -332,8 +332,6 @@ a {
   font-size: 16px;
   line-height: 1.25px;
   /* align-items: center; */
-  -webkit-box-shadow: red inset;
-          box-shadow: red inset;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
