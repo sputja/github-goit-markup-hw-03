@@ -203,6 +203,9 @@ color: var(--title--dark-color);
   background-color: blueviolet;
 }
 
+.container--command .title--h2{
+  padding-top: 94px;
+}
 .work--list{
     display: flex;
 }
@@ -215,8 +218,6 @@ color: var(--title--dark-color);
 .work--item:not(3){
   margin-right: 0;
 }
-
-
 
 .work--title{
  /*  */ width: 370px;
@@ -231,6 +232,28 @@ color: var(--title--dark-color);
 }
 
 /* Команда разработчиков */
+
+.container--command{
+  width: 1600px;
+  height: 702px;
+  margin-top: 94px;
+  padding-left: 215px;
+
+  background: #F5F4FA;
+}
+
+.command--list{
+  display: flex;
+  margin-top: 50px;
+}
+
+.command--item{
+  padding-left: 30px;
+}
+.command--item:last-child{
+  margin-left: 0;
+}
+
 .command--title .command--text {
   font-weight: 500;
   font-size: 16px;
