@@ -33,7 +33,7 @@ body {
   color: var(--text--dark-color);
 }
 
-ul > li {
+ul {
   list-style: none;
 }
 
@@ -42,9 +42,12 @@ a {
 }
 
 /* Шапка и Логотип компании */
-.container--nav {
-  width: 1600px;
-  height: 81px;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav {
@@ -57,11 +60,9 @@ a {
 }
 
 .logotip {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*   display: flex;
   margin-left: 215px;
-  margin-right: 85px;
+  margin-right: 85px; */
   padding-top: 24px;
   padding-bottom: 24px;
   font-family: var(--secondary-fonty);
@@ -115,15 +116,30 @@ a {
   color: var(--accent--color);
 }
 
+/* Hero */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1600px;
+  height: 600px;
+  margin-top: auto;
+  margin-left: auto;
+  /*  justify-content: space-between; */
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 .title--h1 {
-  margin: 0;
-  padding: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  /*   padding-top: 200px;
+  padding-bottom: 30px; */
   color: var(--title--light-color);
 }
 
@@ -142,20 +158,10 @@ a {
   height: 50px;
 }
 
-/* Hero */
-.container--hero {
-  width: 1600px;
-  height: 600px;
-  text-align: center;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
 /*Приимущества */
-.container--about {
-  width: 1090px;
-  height: 251px;
+.container .about {
   margin-top: 94px;
-  margin-left: 215px;
+  /*  margin-left: 215px; */
 }
 
 .title--h2 {
@@ -167,7 +173,7 @@ a {
   color: var(--title--dark-color);
 }
 
-.container--about .about--list {
+.about--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,11 +208,9 @@ a {
 }
 
 /* Разработки */
-.container--development {
-  width: 1170px;
-  height: 386px;
+.container .work {
   margin-top: 94px;
-  margin-left: 215px;
+  /*   margin-left: 215px; */
 }
 
 .work--list {
@@ -237,11 +241,9 @@ a {
 }
 
 /* Команда разработчиков */
-.container--command {
-  width: 1600px;
-  /*  height: 702px; */
+.container .command {
   margin-top: 94px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
   background: #F5F4FA;
 }
 
@@ -274,9 +276,7 @@ a {
 }
 
 /* Клиенты компании */
-.container--customers {
-  width: 1170px;
-  height: 182px;
+.container .customers {
   margin-top: 94px;
   margin-left: 215px;
 }
@@ -297,18 +297,17 @@ a {
 }
 
 /* Портфолио - шапка*/
-.container--portfolio {
-  width: 611px;
-  height: 54px;
+.container .prtfolio {
   margin-top: 93px;
-  margin-left: 495px;
-  background-color: aqua;
+  /*  margin-left: 215px; */
+  background-color: red;
 }
 
 .btn--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 4px;
 }
 
 .btn--item {
@@ -342,6 +341,33 @@ a {
 }
 
 /* Портфолио -Каталог Работ */
+.container .portfolio {
+  /*   width: 1170px;
+  height: 1360px; */
+  margin-top: 93px;
+  /*  margin-left: 215px; */
+}
+
+.work--catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work--catalog-item {
+  display: block;
+  width: 370px;
+  height: 404px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.work--catalog-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
 .work--catalog-title {
   font-weight: 700;
   font-size: 18px;
@@ -356,80 +382,101 @@ a {
   color: var(--text--dark-color);
 }
 
-.work--catalog-textstyle:hover,
-.work--catalog-textstyle:focus {
+/* .work--catalog-textstyle:hover,
+.work--catalog-textstyle:focus
+{
   color: var(--text--light-color);
   background-color: var(--accent--color);
 }
-
-.work--catalog-link:hover {
+.work--catalog-link:hover{
   color: var(--text--light-color);
   background-color: var(--accent--color);
 }
-
+ */
 /* Координаты и обратная связь */
-.container--foter {
-  width: 1600px;
-  height: 252px;
+.footer {
+  /*   height: 252px; */
   background: #2F303A;
+}
+
+.container .footer {
+  width: 1170px;
+}
+
+.footer--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 94px;
 }
 
-.footer--social {
+.footer--item {
   padding-top: 60px;
-  margin-left: 214px;
+  width: 231px;
 }
 
-.footer--social .logotip {
+.footer--item .logotip {
+  /* width: 153px; */
   margin: 0;
   padding: 0;
   color: var(--text--light-color);
 }
 
-.footer--social .address {
-  display: block;
+.footer--item .address {
+  /*  display: flex; */
+  margin: 0;
+  padding: 0;
   padding-top: 20px;
-}
-
-.address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address--city {
+.footer--item .address--city {
   color: var(--text--light-color);
 }
 
-.footer--social1 {
-  padding-top: 72px;
+.footer--item1 {
   width: 206px;
-  height: 80px;
   margin-left: 69px;
+  padding-top: 72px;
 }
 
-.footer--social2 {
-  margin: 0;
-  padding: 0;
-  padding-top: 72px;
+.footer--list1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer--link {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.footer--item2 {
   width: 570px;
-  height: 86px;
+  margin-top: 72px;
   margin-left: 94px;
   /*   background-color: red */
 }
 
-.footer--text {
+.footer--item2 .footer--text {
+  margin: 0;
+  display: block;
+  color: var(--title--light-color);
+}
+
+.footer--item1 .footer--text {
+  margin: 0;
   display: block;
   color: var(--title--light-color);
 }
 
 .footer--email {
-  /* display: block */
-  margin-top: 20px;
-  /*   margin-right: 12px; */
-  width: 358px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
   height: 50px;
+  margin-top: 20px;
+  /*  margin-right: 12px; */
+  width: 354px;
   font-size: 16px;
   line-height: 1.25px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -441,9 +488,14 @@ a {
 }
 
 .footer--buttom {
-  width: 196px;
+  display: inline-block;
+  width: 200px;
   height: 50px;
   margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1,87;

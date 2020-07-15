@@ -14,7 +14,7 @@
 <body>
 	<!--Шапка -->
 	<header>
-		<div  class="container--nav">
+		<div  class="container">
 			<nav class="nav">
 			<!-- Логотип кампании -->
 			<a class="logotip" lang="en" href="./index.html"><span class="logotip--text" >Web</span> Studio</a>
@@ -29,7 +29,7 @@
 					<a class="nav--link" href=./index.html>Контакты</a>
 				</li>
 			</ul>
-			<!-- <div class="container--contact"> -->
+			<div class="contact">
 				<ul class="nav--list1">
 					<li  class="nav--item1">
 						<a class="nav--link1" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -38,20 +38,20 @@
 						<a class="nav--link1" href="tel:+380961111111">+38 096 111 11 11</a>
 					</li>
 				</ul>
-			<!-- </div> -->
+			</div>
 			</nav>
 		</div>
 
 		 <!-- Hero -->
-		 <div class="container--hero">
+		 <div class="hero">
 			<h1 class="title--h1" >Эффективные решения <br>  для вашего бизнеса</h1>
 			<button class="button" type="button">Заказать услугу</button>
 		 </div>
 	</header>
 	<main>
 		<!-- Приимущества -->
-		<section>
-			<div class="container--about">
+		<section class="about">
+			<div class="container">
 				<h2 hidden> О компании </h2>
 				<ul class="about--list">
 					<li class="about--item">
@@ -79,8 +79,8 @@
 
 		</section>
 		<!-- Разработки -->
-		<section>
-			<div class="container--development">
+		<section class="work">
+			<div class="container">
 				<h2 class="title--h2">Чем мы занимаемся</h2>
 				<ul class="work--list">
 					<li class="work--item">
@@ -100,8 +100,8 @@
 
 		</section>
 		<!-- Команда разработчиков -->
-		<section>
-			<div class="container--command">
+		<section class="command">
+			<div class="container">
 				<h2 class="title--h2">Наша команда</h2>
 				<ul class="command--list">
 					<li class="command--item">
@@ -154,8 +154,8 @@
 
 		</section>
 		<!-- Клиенты компании -->
-		<section>
-			<div class="container--customers">
+		<section class="customers">
+			<div class="container">
 				<h2 class="title--h2">Постоянные клиенты</h2>
 				<ul class="customers--list">
 					<li class="customers--item"><a href="./index.html"><img src="./img/klient/Client1.svg" alt="ссылка на компанию" width="170"
@@ -176,30 +176,35 @@
 		</section>
 	</main>
 	<!-- Координаты и обратная связь -->
-	<footer class="container--foter">
+	<footer class="footer">
+		<div class="container">
 		<!-- Логотип кампании -->
-		<div class="footer--social">
-			<a class="logotip" lang="en" href="./index.html"><span class="logotip--text">Web</span> Studio</a>
-			<address class="address"> <span class="address--city">г. Киев, пр-т Леси Украинки, 26</span><br>
-				 info@example.com <br>
-				 +38 099 111 11 11
-			</address>
-	 </div>
-		<div class="footer--social1">
-			<b class="footer--text">Присоединяйтесь</b>
-			<ul class="footer--list">
-				<li class="footer--link"<a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
-				<li class="footer--link"<a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
-				<li class="footer--link"<a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
-				<li class="footer--link"<a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
-			</ul>
-		</div>
-		<div class="footer--social2">
-			<b class="footer--text">Подпишитесь на рассылку</b>
+		<ul class="footer--list">
+			<li class="footer--item">
+				<a class="logotip" lang="en" href="./index.html"><span class="logotip--text">Web</span> Studio</a>
+				<address class="address"> <span class="address--city">г. Киев, пр-т Леси Украинки, 26</span><br>
+					info@example.com <br>
+					+38 099 111 11 11
+				</address>
+			</li>
+			<li class="footer--item1">
+				<b class="footer--text">Присоединяйтесь</b>
+				<ul class="footer--list1">
+					<li class="footer--link"></li> <a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
+					<li class="footer--link"></li> <a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
+					<li class="footer--link"></li><a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
+					<li class="footer--link"></li> <a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+				</ul>
+			</li>
+			<li class="footer--item2">
+				<b class="footer--text">Подпишитесь на рассылку</b>
 
-			<input class="footer--email" type="email"  placeholder="E-mail" name="email" />
-			<button class="footer--buttom" type="submit"> Подписаться</button>
+				<input class="footer--email" type="email"  placeholder="E-mail" name="email" />
+				<button class="footer--buttom" type="submit"> Подписаться</button>
+			</li>
+		</ul>
 		</div>
+
 	</footer>
 
 </body>

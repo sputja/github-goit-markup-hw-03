@@ -15,8 +15,8 @@
 
 <body>
 	<!-- Шапка -->
-	<header>
-		<div  class="container--nav">
+	<header class="nav">
+		<div  class=container">
 			<nav class="nav">
 			<!-- Логотип кампании -->
 			<a class="logotip" lang="en" href="./index.html"><span class="logotip--text" >Web</span> Studio</a>
@@ -31,7 +31,7 @@
 					<a class="nav--link" href=./index.html>Контакты</a>
 				</li>
 			</ul>
-			<!-- <div class="container--contact"> -->
+			<!-- <div class=.containercontact"> -->
 				<ul class="nav--list1">
 					<li  class="nav--item1">
 						<a class="nav--link1" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -46,100 +46,106 @@
 	</header>
 	<main>
 		<!-- Портфолио -->
-		<div class="container--portfolio"	>
-		<h1 hidden>Наши работы</h1>
-			<ul class="btn--list">
-				<li class="btn--item"><button  type="submit"> <span class="button--list">Все</span> </button></li>
-				<li class="btn--item"><button  type="submit"><span class="button--list">Веб-сайты</span></button></li>
-				<li class="btn--item"><button type="submit"><span class="button--list">Приложения</span></button></li>
-				<li class="btn--item"><button type="submit"><span class="button--list">Дизайн</span></button></li>
-				<li class="btn--item"><button type="submit"><span class="button--list">Маркетинг</span></button></li>
-			</ulbut>
+		<section class="portfolio">
+			<div class=container"	>
+				<h1 hidden>Наши работы</h1>
+				<ul class="btn--list">
+					<li class="btn--item"><button  type="submit"> <span class="button--list">Все</span> </button></li>
+					<li class="btn--item"><button  type="submit"><span class="button--list">Веб-сайты</span></button></li>
+					<li class="btn--item"><button type="submit"><span class="button--list">Приложения</span></button></li>
+					<li class="btn--item"><button type="submit"><span class="button--list">Дизайн</span></button></li>
+					<li class="btn--item"><button type="submit"><span class="button--list">Маркетинг</span></button></li>
+				</ul>
+					<!--Каталог Работ -->
+			<div class="work--catalog">
+				<ul class="work--catalog-list">
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/texcrack.jpg" alt="Технокряк команда" width="370" height="294">
+						<h2 class="work--catalog-title">Технокряк</h2>
+						<p class="work--catalog-text">Веб-сайт</p>
+					</a>
+						<!-- <pre class="work--catalog-textstyle">Технокряк это современная
+	площадка распространения
+	коронавируса. Компании
+	используют эту платформу для
+	цифрового шпионажа и атак на
+	защищённые сервера конкурентов.
+						</pre> -->
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/basketball.jpg" alt="Баскетбол" width="370" height="294">
+						<h2 class="work--catalog-title">Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
+						<p class="work--catalog-text">Дизайн</p>
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/seafood.jpg" alt="Ресторан" width="370" height="294">
+						<h2 class="work--catalog-title">Ресторан <span lang="en">Seafood</span> </h2>
+						<p class="work--catalog-text">Дизайн</p>
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/headphone.jpg" alt="наушники" width="370" height="294">
+						<h2 class="work--catalog-title">Проект <span lang="en">Prime</span> </h2>
+						<p class="work--catalog-text">Маркетинг</p>
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/box.jpg" alt="коробки" width="370" height="294">
+						<h2 class="work--catalog-title">Проект <span lang="en">Boxes</span> </h2>
+						<p class="work--catalog-text">Приложение</p>
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/monitor.jpg" alt="монитор" width="370" height="294">
+						<h2 class="work--catalog-title" lang="en">Inspiration has no Borders</h2>
+						<p class="work--catalog-text">Веб-сайт</p>
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/book.jpg" alt="книга" width="370" height="294">
+						<h2 class="work--catalog-title">Издание <span lang="en">Limited Edition</span> </h2>
+						<p class="work--catalog-text">Дизайн</p>
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/label.png" alt="этикетка" width="370" height="294">
+						<h2 class="work--catalog-title">Проект <span lang="en">LAB</span> </h2>
+						<p class="work--catalog-text">Маркетинг</p>
+					</li>
+					<li class="work--catalog-item">
+						<img class="work--catalog-link" src="./img/portfolio/notebook.jpg" alt="ноутбок" width="370" height="294">
+						<h2 class="work--catalog-title" lang="en">Growing Business</h2>
+						<p class="work--catalog-text">Приложение</p>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<!--Каталог Работ -->
-		<section>
-			<ul>
-				<li>
-					<a href="portfolio.html"></a>
-					<h2 class="work--catalog-title">Технокряк</h2>
-					<p class="work--catalog-text">Веб-сайт</p>
-					<pre class="work--catalog-textstyle">Технокряк это современная
-площадка распространения
-коронавируса. Компании
-используют эту платформу для
-цифрового шпионажа и атак на
-защищённые сервера конкурентов.
-					</pre>
-					<!-- <img src="./img/portfolio/text.jpg" alt="Текст"width="322" height="168"></a>  -->
-				</li>
-				<li>
-					<h2 class="work--catalog-title">Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
-					<p class="work--catalog-text">Дизайн</p>
-					<img class="work--catalog-link" src="./img/portfolio/basketball.jpg" alt="Баскетбол" width="370" height="294">
-				</li>
 
-				<li>
-					<h2 class="work--catalog-title">Ресторан <span lang="en">Seafood</span> </h2>
-					<p class="work--catalog-text">Дизайн</p>
-					<img class="work--catalog-link" src="./img/portfolio/seafood.jpg" alt="Ресторан" width="370" height="294">
-				</li>
-				<li>
-					<h2 class="work--catalog-title">Проект <span lang="en">Prime</span> </h2>
-					<p class="work--catalog-text">Маркетинг</p>
-					<img src="./img/portfolio/headphone.jpg" alt="наушники" width="370" height="294">
-				</li>
-				<li>
-					<h2 class="work--catalog-title">Проект <span lang="en">Boxes</span> </h2>
-					<p class="work--catalog-text">Приложение</p>
-					<img class="wor" src="./img/portfolio/box.jpg" alt="коробки" width="370" height="294">
-				</li>
-				<li>
-					<h2 class="work--catalog-title" lang="en">Inspiration has no Borders</h2>
-					<p class="work--catalog-text">Веб-сайт</p>
-					<img src="./img/portfolio/monitor.jpg" alt="монитор" width="370" height="294">
-				<li>
-					<h2 class="work--catalog-title">Издание <span lang="en">Limited Edition</span> </h2>
-					<p class="work--catalog-text">Дизайн</p>
-					<img src="./img/portfolio/book.jpg" alt="книга" width="370" height="294">
-				</li>
-				<li>
-					<h2 class="work--catalog-title">Проект <span lang="en">LAB</span> </h2>
-					<p class="work--catalog-text">Маркетинг</p>
-					<img src="./img/portfolio/label.png" alt="этикетка" width="370" height="294">
-				</li>
-				<li>
-					<h2 class="work--catalog-title" lang="en">Growing Business</h2>
-					<p class="work--catalog-text">Приложение</p>
-					<img src="./img/portfolio/notebook.jpg" alt="ноутбок" width="370" height="294">
-				</li>
-			</ul>
 		</section>
 	</main>
 	<!-- Координаты и обратная связь -->
-	<footer class="container--foter">
+	<footer class="footer">
 		<!-- Логотип кампании -->
-		<div class="footer--social">
-			<a class="logotip" lang="en" href="./index.html"><span class="logotip--text">Web</span> Studio</a>
-			<address class="address"> <span class="address--city">г. Киев, пр-т Леси Украинки, 26</span><br>
-				 info@example.com <br>
-				 +38 099 111 11 11
-			</address>
-	 </div>
-		<div class="footer--social1">
-			<b class="footer--text">Присоединяйтесь</b>
-			<ul class="footer--list">
-				<li class="footer--link"<a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
-				<li class="footer--link"<a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
-				<li class="footer--link"<a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
-				<li class="footer--link"<a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
-			</ul>
-		</div>
-		<div class="footer--social2">
-			<b class="footer--text">Подпишитесь на рассылку</b>
+		<div class="container">
+			<div class="footer--social">
+				<a class="logotip" lang="en" href="./index.html"><span class="logotip--text">Web</span> Studio</a>
+				<address class="address"> <span class="address--city">г. Киев, пр-т Леси Украинки, 26</span><br>
+					 info@example.com <br>
+					 +38 099 111 11 11
+				</address>
+		 </div>
+			<div class="footer--social1">
+				<b class="footer--text">Присоединяйтесь</b>
+				<ul class="footer--list">
+					<li class="footer--link"<a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
+					<li class="footer--link"<a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
+					<li class="footer--link"<a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
+					<li class="footer--link"<a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+				</ul>
+			</div>
+			<div class="footer--social2">
+				<b class="footer--text">Подпишитесь на рассылку</b>
 
-			<input class="footer--email" type="email"  placeholder="E-mail" name="email" />
-			<button class="footer--buttom" type="submit"> Подписаться</button>
+				<input class="footer--email" type="email"  placeholder="E-mail" name="email" />
+				<button class="footer--buttom" type="submit"> Подписаться</button>
+			</div>
 		</div>
+
 	</footer>
 
 </body>
