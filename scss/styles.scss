@@ -51,6 +51,7 @@ a {
 
 .nav{
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -58,8 +59,8 @@ a {
 /*   display: flex;
   margin-left: 215px;
   margin-right: 85px; */
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px; */
+ /*  padding-bottom: 24px; */
 
   font-family: var(--secondary-fonty);
   font-weight: 700;
@@ -76,6 +77,7 @@ a {
 /* Панель навигации */
 .nav--list{
   display: flex;
+  margin-left: 85px;
 }
 
 .nav--list .nav--item + .nav--item{
