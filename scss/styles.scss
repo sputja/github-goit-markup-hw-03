@@ -111,16 +111,10 @@ a {
   color: var(--accent--color);
 }
 
-/* Hero */
+/* Hero добавить фон */
 .hero{
-  display: flex;
-  align-items: center;
-  width: 1600px;
-  height: 600px;
-  margin-top: auto;
-  margin-left: auto;
- /*  justify-content: space-between; */
   text-align: center;
+
   background-color: rgba(47, 48, 58, 0.8);
 }
 .title--h1 {
@@ -128,19 +122,25 @@ a {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-/*   padding-top: 200px;
-  padding-bottom: 30px; */
+  margin: 0;
 
   color: var(--title--light-color);
 }
 
 .button{
+  width: 200px;
+  height: 50px;
+/*   display: inline-block; */
   font-family:var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 0.53;
   letter-spacing: 0.06em;
-
+ /*  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+ */
 
   color: var(--btn--light-color);
   background: var(--btn--accent-color);
@@ -148,17 +148,12 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  width: 200px;
-  height: 50px;
+
 }
-
-
-
 
 /*Приимущества */
 .container .about{
   margin-top: 94px;
- /*  margin-left: 215px; */
 }
 
 .title--h2{
@@ -175,6 +170,7 @@ a {
 }
 
 .about--item{
+  width: 270px;
   padding-top: 50px;
   margin-right: 30px;
 }
@@ -183,9 +179,17 @@ a {
   margin-right: 0;
 }
 
+.about--img{
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .about--img,
 .work--img
 {
+  border-radius: 4px;
   background-color: #F5F4FA;
 }
 .about--title {
