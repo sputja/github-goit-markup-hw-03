@@ -295,27 +295,60 @@ a {
   margin-right: 0;
 }
 /* Портфолио - шапка*/
-.container .prtfolio{
+.container .portfolio{
   margin-top: 93px;
  /*  margin-left: 215px; */
-  background-color: red;
 }
 
-.btn--list{
+.portfolio .btn--list {
   display: flex;
-  margin-bottom: 4px;
+/*   margin-bottom: 4px; */
+  margin-left: 295px;
+/*   background-color: red; */
 }
 
-.btn--item{
-  display: block;
+.portfolio .btn--item{
+  display: inline-block;
+  height: 38px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  border-radius: box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border-radius: 4px;
+  color: var(--btn--dark-color);
+  background: #F5F4FA;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-right: 8px;
-
 }
-.btn--item:not(5){
+
+.portfolio .btn--item:first-child(-n+5){
   margin-right: 0;
 }
 
-.button--list {
+/* .prtfolio.btn--text{
+  color: var(--btn--dark-color);
+  background: #F5F4FA;
+} */
+
+/* .portfolio .button:hover,
+.portfolio .button:focus{
+  color: var(--btn--light-color);
+  background-color: var(--btn--accent-color);
+} */
+
+
+
+/* .portfolio .btn--list {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -326,23 +359,16 @@ a {
   background: #f5f4fa;
 
   border-radius: 4px;
-}
-.button--list:hover,
-.button--list:focus {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-
+} */
+.portfolio .btn--item:hover,
+.portfolio .btn--item:focus {
   color: var(--btn--light-color);
   background-color: var(--btn--accent-color);
 }
+
 /* Портфолио -Каталог Работ */
 .container .portfolio{
-/*   width: 1170px;
-  height: 1360px; */
   margin-top: 93px;
- /*  margin-left: 215px; */
 }
 
 .work--catalog-list{
