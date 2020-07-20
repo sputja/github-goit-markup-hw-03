@@ -93,7 +93,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 305px;
+  /*   margin-left: 305px; */
+  margin-left: auto;
 }
 
 .nav--list1 .nav--item1 + .nav--item1 {
@@ -485,6 +486,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 
